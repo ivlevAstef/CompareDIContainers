@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-  private var generator: RandomStatementGenerator!
+  var generator: RandomStatementGenerator!
   
   @IBOutlet private var statementLbl: UILabel!
   @IBOutlet private var authorLbl: UILabel!
