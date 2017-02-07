@@ -20,9 +20,9 @@ let module: Container = {
     vc.generator = r.resolve(RandomStatementGenerator.self)!
   }
   
-  container.register(RandomStatementGenerator.self) { r in
-    ServerRandomStatementGenerator(server: r.resolve(Server.self)!)
-  }
+//  container.register(RandomStatementGenerator.self) { r in
+//    ServerRandomStatementGenerator(server: r.resolve(Server.self)!)
+//  }
   
   container.register(RandomStatementGenerator.self) { r in
     MockRandomStatementGenerator()
