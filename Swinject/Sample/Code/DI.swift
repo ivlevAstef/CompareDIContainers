@@ -30,7 +30,7 @@ let module: Container = {
   
   container.register(Server.self) { _ in
     Server(host: "host", domain: "domain")
-  }
+  }.inObjectScope(.container)
   
   return container
 }()

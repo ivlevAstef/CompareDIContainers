@@ -66,6 +66,9 @@
                             <constraint firstAttribute="trailing" secondItem="B5H-ri-cTI" secondAttribute="trailing" constant="16" id="oRf-ph-nXh"/>
                         </constraints>
                     </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="dipTag" value="myVC"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="authorLbl" destination="yCL-mh-vqy" id="7dl-kV-B9r"/>
                         <outlet property="statementLbl" destination="B5H-ri-cTI" id="Yug-uC-hip"/>
