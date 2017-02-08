@@ -26,3 +26,10 @@ class SampleModule: DIModule {
       .lifetime(.lazySingle)
   }
 }
+
+let container: DIScope = {
+  let builder = DIContainerBuilder()
+  builder.register(module: SampleModule())
+  
+  return try! builder.build()
+}()

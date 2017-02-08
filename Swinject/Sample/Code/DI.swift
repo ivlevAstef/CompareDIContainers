@@ -9,7 +9,7 @@
 import Swinject
 import SwinjectStoryboard
 
-let module: Container = {
+let container: Container = {
   let container = Container()
   
   container.register(UIStoryboard.self) { r in

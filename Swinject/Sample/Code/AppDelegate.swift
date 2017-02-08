@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func applicationDidFinishLaunching(_ application: UIApplication) {
     window = UIWindow(frame: UIScreen.main.bounds)
     
-    let storyboard = module.resolve(UIStoryboard.self)!
+    let storyboard = container.resolve(UIStoryboard.self)!
     
     window!.rootViewController = storyboard.instantiateInitialViewController()
     window!.makeKeyAndVisible()

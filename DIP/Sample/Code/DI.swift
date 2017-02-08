@@ -9,8 +9,7 @@
 import Dip
 import Dip_UI
 
-
-let module: DependencyContainer = {
+let container: DependencyContainer = {
   let container = DependencyContainer()
   
   container.register { UIStoryboard(name: "Main", bundle: Bundle.main) }

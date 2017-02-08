@@ -18,11 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func applicationDidFinishLaunching(_ application: UIApplication) {
     window = UIWindow(frame: UIScreen.main.bounds)
     
-    let builder = DIContainerBuilder()
-    builder.register(module: SampleModule())
-    
-    let container = try! builder.build()
-    
     let storyboard: UIStoryboard = try! container.resolve()
     
     window!.rootViewController = storyboard.instantiateInitialViewController()
