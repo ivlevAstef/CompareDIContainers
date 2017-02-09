@@ -1,0 +1,5 @@
+platform :ios, '8.0’
+use_frameworks!
+
+target 'Sample'
+pod 'DITranquillity', :git => 'https://github.com/ivlevAstef/DITranquillity', :branch => 'v2.0.0'
